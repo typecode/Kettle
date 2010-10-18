@@ -62,9 +62,9 @@ public class ParticleGarden
 				p.update();
 				
 				if (repelMode) { 
-					p.repel(new PVector(app.mouseX, app.mouseY), 300, 8.5f);
+					p.repel(new PVector(controlX, controlY), 300, 8.5f);
 				} else {
-					p.attract(new PVector(app.mouseX, app.mouseY), 300, 18.5f);
+					p.attract(new PVector(controlX, controlY), 300, 18.5f);
 				}
 				
 				// restore
